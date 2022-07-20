@@ -1,0 +1,340 @@
+[
+	{
+		"type": "Normal",
+
+		"vulnerabilities": [
+			"Fighting"
+		],
+
+		"immunities": [
+			"Ghost"
+		],
+
+		"resistances": []
+	},
+
+	{
+		"type": "Fire",
+
+		"vulnerabilities": [
+			"Ground",
+			"Rock",
+			"Water"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Fire",
+			"Bug",
+			"Steel",
+			"Grass",
+			"Ice"
+		]
+	},
+
+	{
+		"type": "Fighting",
+
+		"vulnerabilities": [
+			"Flying",
+			"Psychic",
+			"Fairy"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Rock",
+			"Bug",
+			"Dark"
+		]
+	},
+
+	{
+		"type": "Flying",
+
+		"vulnerabilities": [
+			"Rock",
+			"Electric",
+			"Ice"
+		],
+
+		"immunities": [
+			"Ground"
+		],
+
+		"resistances": [
+			"Fighting",
+			"Bug",
+			"Grass"
+		]
+	},
+
+	{
+		"type": "Poison",
+
+		"vulnerabilities": [
+			"Ground",
+			"Psychic"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Fighting",
+			"Poison",
+			"Grass",
+			"Fairy"
+		]
+	},
+
+	{
+		"type": "Ground",
+
+		"vulnerabilities": [
+			"Water",
+			"Grass",
+			"Ice"
+		],
+
+		"immunities": [
+			"Electric"
+		],
+
+		"resistances": [
+			"Poison",
+			"Rock"
+		]
+	},
+
+	{
+		"type": "Rock",
+
+		"vulnerabilities": [
+			"Fighting",
+			"Ground",
+			"Steel",
+			"Water",
+			"Grass"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Normal",
+			"Flying",
+			"Poison",
+			"Fire"
+		]
+	},
+
+	{
+		"type": "Bug",
+
+		"vulnerabilities": [
+			"Flying",
+			"Rock",
+			"Fire"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Fighting",
+			"Ground",
+			"Grass"
+		]
+	},
+
+	{
+		"type": "Ghost",
+
+		"vulnerabilities": [
+			"Ghost",
+			"Dark"
+		],
+
+		"immunities": [
+			"Normal",
+			"Fighting"
+		],
+
+		"resistances": [
+			"Poison",
+			"Bug"
+		]
+	},
+
+	{
+		"type": "Steel",
+
+		"vulnerabilities": [
+			"Fighting",
+			"Ground",
+			"Fire"
+		],
+
+		"immunities": [
+			"Poison"
+		],
+
+		"resistances": [
+			"Normal",
+			"Flying",
+			"Rock",
+			"Bug",
+			"Steel",
+			"Grass",
+			"Psychic",
+			"Ice",
+			"Dragon",
+			"Fairy"
+		]
+	},
+
+	{
+		"type": "Water",
+
+		"vulnerabilities": [
+			"Grass",
+			"Electric"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Steel",
+			"Fire",
+			"Water",
+			"Ice"
+		]
+	},
+
+	{
+		"type": "Grass",
+
+		"vulnerabilities": [
+			"Flying",
+			"Fire",
+			"Poison",
+			"Bug",
+			"Ice"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Ground",
+			"Water",
+			"Grass",
+			"Electric"
+		]
+	},
+
+	{
+		"type": "Electric",
+
+		"vulnerabilities": [
+			"Ground"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Flying",
+			"Steel",
+			"Electric"
+		]
+	},
+
+	{
+		"type": "Psychic",
+
+		"vulnerabilities": [
+			"Bug",
+			"Ghost",
+			"Dark"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Fighting",
+			"Psychic"
+		]
+	},
+
+	{
+		"type": "Ice",
+
+		"vulnerabilities": [
+			"Fighting",
+			"Rock",
+			"Steel",
+			"Fire"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Ice"
+		]
+	},
+
+	{
+		"type": "Dragon",
+
+		"vulnerabilities": [
+			"Ice",
+			"Dragon",
+			"Fairy"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Fire",
+			"Water",
+			"Grass",
+			"Electric"
+		]
+	},
+
+	{
+		"type": "Fairy",
+
+		"vulnerabilities": [
+			"Poison",
+			"Steel"
+		],
+
+		"immunities": [],
+
+		"resistances": [
+			"Fighting",
+			"Bug",
+			"Dragon",
+			"Dark"
+		]
+	},
+
+	{
+		"type": "Dark",
+
+		"vulnerabilities": [
+			"Fighting",
+			"Bug",
+			"Fairy"
+		],
+
+		"immunities": [
+			"Psychic"
+		],
+
+		"resistances": [
+			"Ghost",
+			"Dark"
+		]
+	}
+]
