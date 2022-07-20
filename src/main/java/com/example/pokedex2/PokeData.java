@@ -12,7 +12,7 @@ public class PokeData {
 
 	private static Connection connect() {
 		
-		String connString = "jdbc:sqlite:PokemonDB.db";
+		String connString = "jdbc:sqlite::resource:PokemonDB.db";
 		Connection conn = null;
 
 		try {
