@@ -172,8 +172,6 @@ public class DexController {
         bodyContent.getChildren().add(bottomContent);
 
         body.setPannable(true);
-        body.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-        body.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
     }
 
 
@@ -192,18 +190,16 @@ public class DexController {
         hideInfoLabel.setOnMouseClicked(event -> hideInfo());
         hideInfoLabel.setStyle("-fx-font-size: 15px; -fx-font-family: Gill Sans; -fx-cursor: hand;");
 
+        bottomContent.getChildren().add(effectiveness);
+        bottomContent.getChildren().add(infoLabels);
+        bodyContent.getChildren().add(bottomContent);
+
         infoLabels.getChildren().clear();
         infoLabels.getChildren().add(hideInfoLabel);
 
         scrollAnimation();
 
-        bottomContent.getChildren().add(effectiveness);
-        bottomContent.getChildren().add(infoLabels);
-        bodyContent.getChildren().add(bottomContent);
-
         body.setPannable(true);
-        body.setVbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
-        body.setHbarPolicy(ScrollPane.ScrollBarPolicy.NEVER);
     }
 
 
