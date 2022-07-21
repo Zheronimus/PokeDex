@@ -26,17 +26,9 @@ public class FilterController {
         String selection = filterSelector.getSelectionModel().getSelectedItem();
 
         switch (selection) {
-            case "Filter By Type":
-                addFilterByTypeSect();
-                break;
-
-            case "Filter By Generation":
-                addFilterByGenerationSect();
-                break;
-
-            case "Filter By Forms":
-                addFilterByFormsSect();
-                break;
+            case "Filter By Type" -> addFilterByTypeSect();
+            case "Filter By Generation" -> addFilterByGenerationSect();
+            case "Filter By Forms" -> addFilterByFormsSect();
         }
 
         VBox.setMargin(setFilterButton, new Insets(25, 0, 0, 0));
@@ -132,17 +124,12 @@ public class FilterController {
     @FXML public void setFilter() {
 
         switch (filterSelector.getSelectionModel().getSelectedItem()) {
-            case "Filter By Type":
-                Dex.getInstance().filterByType(((RadioButton) buttonGroup.getSelectedToggle()).getText());
-                break;
-
-            case "Filter By Generation":
-                Dex.getInstance().filterByGeneration(Integer.parseInt(((RadioButton) buttonGroup.getSelectedToggle()).getText().substring(((RadioButton) buttonGroup.getSelectedToggle()).getText().length() - 1)));
-                break;
-
-            case "Filter By Forms":
-                Dex.getInstance().filterByForms(((RadioButton) buttonGroup.getSelectedToggle()).getText());
-                break;
+            case "Filter By Type" ->
+                    Dex.getInstance().filterByType(((RadioButton) buttonGroup.getSelectedToggle()).getText());
+            case "Filter By Generation" ->
+                    Dex.getInstance().filterByGeneration(Integer.parseInt(((RadioButton) buttonGroup.getSelectedToggle()).getText().substring(((RadioButton) buttonGroup.getSelectedToggle()).getText().length() - 1)));
+            case "Filter By Forms" ->
+                    Dex.getInstance().filterByForms(((RadioButton) buttonGroup.getSelectedToggle()).getText());
         }
 
         PokedexDriver.dexController.addRemoveFilterButton();
