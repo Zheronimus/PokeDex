@@ -56,7 +56,7 @@
     <center>
         <ScrollPane fx:id="body" styleClass="body" hbarPolicy="NEVER" vbarPolicy="NEVER">
             <VBox fx:id="bodyContent">
-                <VBox fx:id="topContent" alignment="CENTER" prefWidth="498">
+                <VBox fx:id="topContent" alignment="CENTER" prefWidth="500">
                     <Button fx:id="filterButton" style="-fx-background-color: Transparent;" onAction="#handleFilter">
                         <VBox.margin>
                             <Insets left="455"/>
