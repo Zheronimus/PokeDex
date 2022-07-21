@@ -1,7 +1,6 @@
 package com.example.pokedex2;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 
 public class Dex {
 
@@ -70,7 +69,6 @@ public class Dex {
         }
 
         dex = filteredDex;
-        dex.sort(Comparator.comparing(Pokemon::getEntryNum));
         setCurrPokemon(dex.get(0));
     }
 
@@ -108,7 +106,6 @@ public class Dex {
         }
 
         dex = filteredDex;
-        dex.sort(Comparator.comparing(Pokemon::getEntryNum));
         setCurrPokemon(dex.get(0));
     }
 
