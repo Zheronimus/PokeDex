@@ -7,7 +7,7 @@ public class Pokemon implements Cloneable {
     private String name;
 	private final String typeOne;
 	private final String typeTwo;
-    private final int entryNum;
+    	private final int entryNum;
 	private final int baseHp;
 	private final int baseAtt;
 	private final int baseDef;
@@ -109,13 +109,7 @@ public class Pokemon implements Cloneable {
 
     	PokeData.setPokeData(dex, dexName);
 
-		if (BinarySearch.searchByEntry(dex, entryNum) != -1) {
-			if (dex.get(BinarySearch.searchByEntry(dex, entryNum)).entryNum <= entryNum) {
-				return dex.get(BinarySearch.searchByEntry(dex, entryNum)).entryNum == entryNum;
-			}
-		}
-
-		return false;
+		return BinarySearch.searchByEntry(dex, this.entryNum) != -1;
 	}
 
 
@@ -186,11 +180,11 @@ public class Pokemon implements Cloneable {
 
 		PokeData.setPokeData(megaDex, "MegaDex");
 
-		if(megaType == 'x') {
+		if (megaType == 'x') {
             mega = megaDex.get(BinarySearch.searchByEntry(megaDex, entryNum) - 1);
         }
 
-		else if(megaType == 'y') {
+		else if (megaType == 'y') {
             mega =  megaDex.get(BinarySearch.searchByEntry(megaDex, entryNum));
         }
 
